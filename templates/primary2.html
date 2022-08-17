@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='prm.css') }}">
+    <title>Twitter Analysis</title>
+</head>
+<body>
+    <h2 class="head">Twitter Sentiment Analysis Application</h2>
+    <div class = "input">
+        <form method = "post" action = "/feature2"> 
+            <label>Enter the Person 1 Twitter handle:</label> 
+            <input type="text" name="p_name1"> </input>
+            <br>
+            <label>Enter the Person 2 Twitter handle:</label>
+            <input type="text" name="p_name2"> </input>
+             
+            <br>
+            <label for="city">Select a city:</label>
+
+            <select name="city" id="city">
+                <option value="delhi" selected = "selected"  disabled hidden>
+                    Select an Option
+                </option>
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+            </select> 
+            
+            <br>
+            <!-- <label>Enter a city for selected Country:</label> 
+            <input type="text" name="city"> </input> -->
+            <br><br>
+            <div class="sub"><input type="submit"> </input></div>
+                
+        </form>
+    </div>
+</body>
+</html>
